@@ -13,7 +13,7 @@
 	<context:component-scan base-package="cn.e3mall.service"></context:component-scan>
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="e3-manager"/>
-	<dubbo:registry protocol="zookeeper" address="192.168.72.128:2181"/>	
+	<dubbo:registry protocol="zookeeper" address="192.168.25.123:2181"/>	
 	<dubbo:protocol name="dubbo" port="20880"></dubbo:protocol>
 	<dubbo:service interface="cn.e3mall.service.ItemService" ref="itemServiceImpl" />
 	
