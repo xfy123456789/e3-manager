@@ -1,5 +1,7 @@
 package cn.e3mall.service.impl;
 
+
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,7 +29,7 @@ public class ItemCatServiceImpl implements ItemCatService {
 	private TbItemCatMapper itemCatMapper;
 	
 	@Override
-	public List<EasyUITreeNode> getItemCatlist(long parentId) {
+	public List<EasyUITreeNode> getItemCatList(long parentId) {
 		//根据parentId查询子节点列表
 		TbItemCatExample example = new TbItemCatExample();
 		Criteria criteria = example.createCriteria();
@@ -50,5 +52,4 @@ public class ItemCatServiceImpl implements ItemCatService {
 		//返回结果
 		return resultList;
 	}
-
 }
